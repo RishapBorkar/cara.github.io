@@ -11,7 +11,7 @@
 <body>
 
     <section id="header">
-        <a href="#"><img src="img/logo.png" class="logo" alt=""></a>
+        <a href="#" onclick="window.location.href='index.html';"><img src="img/logo.png" class="logo" alt=""></a>
                 <div class="search-bar">
             <form>
                 <i class="fas fa-search"></i>
@@ -21,6 +21,7 @@
 
         <div>
             <ul id="navbar">
+                <li><button class="login" onclick=loginFromOtherPage()>Login</button></li>
                 <li><a href="index.html">Home</a></li>
                 <li><a class="active" href="shop.html">Shop</a></li>
                 <li><a href="blog.html">Blog</a></li>
