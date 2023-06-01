@@ -1,3 +1,7 @@
+const loginFromOtherPage = () => {
+    window.location.href = "loginPage.html";
+};
+
 const bar = document.getElementById('bar');
 const close = document.getElementById('close');
 const nav = document.getElementById('navbar')
@@ -59,4 +63,31 @@ const search2 = () => {
            }
         }
     }
-}
+};
+
+
+const wrapper = document.querySelector(".wrapper");
+const loginLink = document.querySelector(".login-link");
+const registerLink = document.querySelector(".register-link");
+const btnPopUp = document.querySelector(".btnLogin-popup");
+const iconClose = document.querySelector(".icon-close");
+const heroText = document.getElementById("hero-text");
+
+registerLink.addEventListener("click", () => {
+    wrapper.classList.add("active2");
+})
+
+loginLink.addEventListener("click", () => {
+    wrapper.classList.remove("active2");
+})
+
+
+btnPopUp.addEventListener("click", () => {
+    wrapper.classList.add("active2-popup");
+})
+
+iconClose.addEventListener("click", () => {
+    wrapper.classList.remove("active2-popup");
+})
+
+
