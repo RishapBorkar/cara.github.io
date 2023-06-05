@@ -39,8 +39,8 @@
     </section>
 
     <section id="page-header" class="about-header">    
-        <h2>#let's_talk</h2>        
-        <p>LEAVE A MESSAGE, We love to hear from you!</p>
+        <h2>#StyleOnTheGo</h2>        
+        <p>Fill your virtual cart with fashion-forward finds!</p>
     </section>
 
     <section id="cart" class="section-p1">
@@ -55,39 +55,13 @@
                     <td>Subtotal</td>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
-                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
-                    <td>
-                        <img src="img/products/f1.jpg" alt="">
-                    </td>
-                    <td>Cartoon Astronaut T-Shirts</td>
-                    <td>$118.19</td>
-                    <td><input type="number" value="1"></td>
-                    <td>$118.19</td>
-                </tr>
-                <tr>
-                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
-                    <td>
-                        <img src="img/products/f2.jpg" alt="">
-                    </td>
-                    <td>Cartoon Astronaut T-Shirts</td>
-                    <td>$118.19</td>
-                    <td><input type="number" value="1"></td>
-                    <td>$118.19</td>
-                </tr>
-                <tr>
-                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
-                    <td>
-                        <img src="img/products/f3.jpg" alt="">
-                    </td>
-                    <td>Cartoon Astronaut T-Shirts</td>
-                    <td>$118.19</td>
-                    <td><input type="number" value="1"></td>
-                    <td>$118.19</td>
-                </tr>
+            <tbody class="cart-content">
+                <!-- Products will be added here -->
             </tbody>
         </table>
+        <div id="cart-empty-message" style="display: none;">
+            Cart is empty
+        </div>
     </section>
 
     <section id="cart-add" class="section-p1">
@@ -104,7 +78,7 @@
             <table>
                 <tr>
                     <td>Cart Subtotal</td>
-                    <td>$ 335</td>
+                    <td class="cart-subtotal"></td>
                 </tr>
                 <tr>
                     <td>Shipping</td>
@@ -112,10 +86,10 @@
                 </tr>
                 <tr>
                     <td><strong>Total</strong></td>
-                    <td><strong>$ 335</strong></td>
+                    <td><strong class="cart-total"></strong></td>
                 </tr>
             </table>
-            <button class="normal">Procced to checkout</button>
+            <button class="normal buyNow">Buy Now</button>
         </div>
     </section>
 
